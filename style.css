@@ -8,7 +8,7 @@ body {
   font-size: 30px;
   background-color: rgb(255, 255, 255);
   border: 2px solid black;
-  display: block;
+  visibility: visible;
 }
 #plusButton:hover {
   cursor: pointer;

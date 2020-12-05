@@ -8,21 +8,17 @@ let myTarget = document.querySelector("#myTarget");
 
 function timer() {
   document.querySelector("#plusButton").style.visibility = "hidden";
-  let usertime = new Date();
-  let countDown = new Date().getTime() + sessionLength; //'Aug 16, 2020 02:00:00';
-  console.log(usertime);
+  let countDown = new Date().getTime() + sessionLength;
   console.log(countDown);
-  var usertimeoffset = usertime.getTimezoneOffset();
-  var fix = usertimeoffset * 60000;
 
-  const second = 1000,
-    minute = second * 60,
-    hour = minute * 60,
-    day = hour * 24;
+  const second = 1000;
+  let minute = second * 60;
+  let hour = minute * 60;
 
   x = setInterval(function () {
-    let now = new Date().getTime() + fix,
-      distance = countDown - now;
+    let now = new Date().getTime();
+    console.log(now);
+    distance = countDown - now;
     if (distance < 100 && distance > -1500) {
       addToGrid();
       distance = 0;
