@@ -8,14 +8,7 @@
   </head>
   <body>
     <center><h1>Pomodoro Tracker</h1></center>
-
-    <center>
-      <button id="plusButton" onclick="timer()">Begin session</button>
-    </center>
-    <center>
-      <button class="settings" onclick="getTarget()">Update Target</button>
-      <button class="settings" onclick="getLength()">Change Length</button>
-    </center>
+    <br />
 
     <div id="container">
       <div id="countdown">
@@ -26,10 +19,18 @@
       </div>
     </div>
     <div id="tomatoGrid"></div>
-
-    <center>
-      <div id="myTarget" style="position: relative; bottom: 300px"></div>
-    </center>
+    <div style="position: relative; bottom: 300px">
+      <center>
+        <div style="margin: 15px" ; id="myTarget"></div>
+      </center>
+      <center>
+        <button id="plusButton" onclick="timer()">Begin session</button>
+      </center>
+      <center>
+        <button class="settings" onclick="getTarget()">Update Target</button>
+        <button class="settings" onclick="getLength()">Change Length</button>
+      </center>
+    </div>
   </body>
 
   <script src="app.js"></script>

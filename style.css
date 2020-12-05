@@ -7,6 +7,8 @@ body {
 #plusButton {
   font-size: 30px;
   background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  display: block;
 }
 #plusButton:hover {
   cursor: pointer;
@@ -14,7 +16,7 @@ body {
 
 h1 {
   font-family: arial;
-  font-size: 30px;
+  font-size: 35px;
   color: black;
 }
 
@@ -64,7 +66,7 @@ li span {
 #tomatoGrid {
   height: 500px;
   width: 100%;
-  max-width: 600px;
+  max-width: 750px;
 }
 
 #myTarget {
@@ -72,12 +74,13 @@ li span {
 }
 
 .settings {
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 18px;
-  border: 1px solid;
-  padding: 5px;
-  border: 1px solid black;
-  margin-top: 15px;
+  border: 2px solid black;
+  padding: 8px;
+
+  margin: 15px;
+  margin-top: 25px;
   background-color: rgb(255, 255, 255);
 }
 .settings:hover {

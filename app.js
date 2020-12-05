@@ -7,6 +7,7 @@ document.getElementById("seconds").innerText = "0";
 let myTarget = document.querySelector("#myTarget");
 
 function timer() {
+  document.querySelector("#plusButton").style.visibility = "hidden";
   let usertime = new Date();
   let countDown = new Date().getTime() + sessionLength; //'Aug 16, 2020 02:00:00';
   console.log(usertime);
@@ -31,6 +32,7 @@ function timer() {
 
       music = new Audio("success.mp3");
       music.play();
+      document.querySelector("#plusButton").style.visibility = "visible";
     } else {
       document.getElementById("minutes").innerText = Math.floor(
         (distance % hour) / minute
