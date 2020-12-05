@@ -43,7 +43,7 @@ function timer() {
 function addTomato() {
   tomatoCount += 1;
   console.log(tomatoCount);
-  if (tomatoCount === target) {
+  if (tomatoCount == target) {
     myTarget.textContent = "Target Achieved, well done!";
   } else {
     myTarget.textContent = "Completed: " + tomatoCount + "/" + target;
