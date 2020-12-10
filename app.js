@@ -14,6 +14,9 @@ function timer() {
   const second = 1000;
   let minute = second * 60;
   let hour = minute * 60;
+  
+  music = new Audio("success.mp3");
+  setTimeout(function(){music.play();}, sessionLength);
 
   x = setInterval(function () {
     let now = new Date().getTime();
@@ -25,9 +28,7 @@ function timer() {
       document.getElementById("minutes").innerText = `${sessionLength / 60000}`;
 
       clearInterval(x);
-
-      music = new Audio("success.mp3");
-      music.play();
+      
       document.querySelector("#plusButton").style.visibility = "visible";
     } else {
       document.getElementById("minutes").innerText = Math.floor(
